@@ -1,0 +1,23 @@
+1. Create Database models
+2. create endpoint "users/":
+    1. POST - Creates new user
+    2. GET with <id> gets user by id
+    3. GET with <email> gets user by email
+    4. PUT with id updates user information
+    5. DELETE deletes user
+
+ 
+
+3. Ability to manipulate cash to account.
+    1. create endpoint "account_cash_transactions/"
+        1. POST - creates new cash transaction
+        2. GET - with <account_id> return all account account_cash_transactions sort by creation_date: desc
+        3. GET - with <account_id> get users cash balance
+
+ 
+
+4. Ability to go and do some trading.
+    1. create endpoint "stock/"
+        GET <ticker> get ticker current price
+        "stock/sell/<account_id>/<ticker>"
+        "stock/buy/<account_id>/<ticker>"
